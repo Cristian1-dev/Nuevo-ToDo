@@ -6,13 +6,13 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
-
-
 }
 p {
     width: 70%;
     min-height: 30px;
     padding: 5px;
+    /* overflow-wrap: anywhere se usa para que si no alcanza el espacio
+    que tiene el contenedor se haga un salto de linea */
     overflow-wrap: anywhere;
 }
 
@@ -32,6 +32,8 @@ p {
     text-decoration: line-through;
 }
 .cambioColor {
+    /* aqui se agregan nuevamente los estilos para que se 
+    mantengan los estilos de contenedor tarea */
     background-color: rgb(57, 13, 98);
     width: 100%;
     min-height: 50px;
