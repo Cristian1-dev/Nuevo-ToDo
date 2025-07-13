@@ -1,0 +1,23 @@
+.contenedor-input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.entradaTexto {
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+}
+
+.agregar-tarea {
+    width: 20%;
+    height: 30px;
+    
+}

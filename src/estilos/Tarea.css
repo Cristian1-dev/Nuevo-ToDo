@@ -1,0 +1,45 @@
+.contenedor-tarea {
+    width: 100%;
+    min-height: 50px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+p {
+    width: 70%;
+    min-height: 30px;
+    padding: 5px;
+    overflow-wrap: anywhere;
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eliminar {
+    margin-left: 5px;
+}
+.eliminar,.realizado {
+    width: 25px;
+    height: 25px;
+}
+.completado {
+    text-decoration: line-through;
+}
+.cambioColor {
+    background-color: rgb(57, 13, 98);
+    width: 100%;
+    min-height: 50px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border: solid green;
+}
