@@ -1,4 +1,6 @@
 import '../estilos/Tarea.css';
+import { FaCircleCheck } from "react-icons/fa6";
+import { MdDelete } from "react-icons/md";
 // recibo tarea, tareaCompletada(funcion) y eliminarTarea(funcion)
 export const Tarea = ({tarea, tareaCompletada, eliminarTarea}) => {
     return (
@@ -10,9 +12,9 @@ export const Tarea = ({tarea, tareaCompletada, eliminarTarea}) => {
             {/* contenedor de botones             */}
             <div className="contenedor-botones">
                 {/* ejecuto la funcion tareaCompletada con el id de la tarea */}
-                <button onClick={() => tareaCompletada(tarea.id)} className="realizado">H</button>
+                <button onClick={() => tareaCompletada(tarea.id)} className="realizado"><FaCircleCheck size={15} /></button>
                 {/* ejecuto la funcion eliminarTarea con el id de la tarea */}
-                <button className="eliminar" onClick={()=> eliminarTarea(tarea.id)} >D</button>
+                <button className="eliminar"  onClick={()=> eliminarTarea(tarea.id)} ><MdDelete size={20} /></button>
             </div>
         </div>
     )

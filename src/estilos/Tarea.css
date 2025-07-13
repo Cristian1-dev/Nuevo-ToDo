@@ -24,9 +24,14 @@ p {
 .eliminar {
     margin-left: 5px;
 }
-.eliminar,.realizado {
-    width: 25px;
-    height: 25px;
+.eliminar svg,.realizado svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+   
 }
 .completado {
     text-decoration: line-through;
