@@ -21,19 +21,23 @@ export const Tarea = ({tarea, tareaCompletada, eliminarTarea}) => {
 // comentarios:
 // Se utilizan funciones anónimas en los botones por dos razones principales:
 
-// 1. Para pasar parámetros a la función: En tu código, necesitas pasar tarea.id como argumento a las funciones tareaCompletada y eliminarTarea . Si escribieras directamente:
+// 1. Para pasar parámetros a la función: En tu código, necesitas 
+// pasar tarea.id como argumento a las funciones tareaCompletada y eliminarTarea . Si 
+// escribieras directamente:
 // ```
 // onClick={tareaCompletada
 // (tarea.id)}
 // ```
-// Esta función se ejecutaría inmediatamente al renderizar el componente, no cuando se haga clic en el botón.
+// Esta función se ejecutaría inmediatamente al renderizar el 
+// componente, no cuando se haga clic en el botón.
 
 // 2. Para evitar la ejecución inmediata: Al usar una función anónima:
 // ```
 // onClick={() => 
 // tareaCompletada(tarea.id)}
 // ```
-// La función solo se ejecutará cuando se haga clic en el botón, que es el comportamiento que queremos.
+// La función solo se ejecutará cuando se haga clic en el botón, que es el 
+// comportamiento que queremos.
 
 // En resumen, las funciones anónimas actúan como un "envoltorio" que nos permite:
 
